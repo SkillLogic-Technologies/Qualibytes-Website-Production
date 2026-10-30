@@ -1,0 +1,38 @@
+# Qualibytes IT Academy
+
+> Qualibytes IT Academy is an IT training institute in Noida, India (Ground Floor, B-91, B Block, Sector 2, Noida, Uttar Pradesh 201301). It started in 2020 as a working IT company and trains students, freshers and working professionals through live interactive classes, real client projects, weekend mock interviews, an internship certificate, and placement support with direct job referrals. Fees are payable in EMIs starting at ₹2,000 per month.
+
+Key facts:
+- Founded: 2020, by Akshit Giri (CEO & Founder) and Deepanshu Giri (Co-Founder & COO)
+- Mode: Live online classes and in-person at the Noida office
+- Learners: Students, freshers, working professionals
+- Outcomes: Internship certificate, mock interviews, interview support, job referrals
+- Alumni work at: Amazon, PayPal, Adobe, NTT Data, Nykaa, Akamai, Stripe, AJIO, Muthoot Finance and others
+
+## Programs
+- [DevOps](https://qualibytes.com/courses/devops): CI/CD, Docker, Kubernetes, AWS, automation, real projects
+- [AI/ML](https://qualibytes.com/courses/aiml): Python, TensorFlow, PyTorch, Generative AI, model deployment
+- [Data Analytics](https://qualibytes.com/courses/data-analytics): SQL, Excel, Power BI, dashboards
+- [Data Science](https://qualibytes.com/courses/data-science): Python, Machine Learning, Deep Learning
+- [Software Testing](https://qualibytes.com/courses/software-testing): Manual, automation and performance testing
+- [Manual Testing](https://qualibytes.com/courses/manual-testing): SDLC/STLC, test cases, Jira bug tracking
+- [Automation Testing](https://qualibytes.com/courses/automation-testing): Selenium, Playwright, API automation
+- [Java Full Stack](https://qualibytes.com/courses/java-fullstack): Java, Spring Boot, REST APIs, React
+- [PHP Full Stack](https://qualibytes.com/courses/php-fullstack): PHP, Laravel, MySQL, JavaScript
+- [Python Full Stack](https://qualibytes.com/courses/python-fullstack): Python, Django/Flask, REST APIs
+- [MERN Backend](https://qualibytes.com/courses/mern): Node.js, Express, MongoDB, REST APIs
+- [MERN Full Stack](https://qualibytes.com/courses/mern-fullstack): MongoDB, Express, React, Node.js
+- [Frontend Development](https://qualibytes.com/courses/frontend-development): HTML, CSS, JavaScript, React, Tailwind
+- [Backend Development](https://qualibytes.com/courses/backend): Node.js, databases, APIs
+- [Android Development](https://qualibytes.com/courses/android): Kotlin, Java, Jetpack, Firebase
+- [iOS App Development](https://qualibytes.com/courses/ios-development): Swift, SwiftUI, Xcode
+- [Cyber Security](https://qualibytes.com/courses/cybersecurity): Ethical hacking, network security tools
+- [Business Analyst](https://qualibytes.com/courses/business-analyst): BRDs, user stories, Jira, Agile
+- [Medical Billing](https://qualibytes.com/courses/medical-billing): CPT/ICD-10/HCPCS coding, claims, RCM
+- [US IT Recruitment](https://qualibytes.com/courses/usit): IT staffing lifecycle, sourcing, ATS, visa types
+
+## Company
+- [About](https://qualibytes.com/about): History and approach (IT company first, academy second)
+- [Student reviews & placements](https://qualibytes.com/testimonials)
+- [Contact](https://qualibytes.com/contact): Counselling call, office address
+- [Online Degree](https://qualibytes.com/online-degree-programs)

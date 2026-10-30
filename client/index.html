@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <!-- Bebas Neue (about.tsx's stats section) — moved here from a
+         component-scoped CSS @import (render-blocking, discovered late,
+         and silently blocked by CSP in production this whole time since
+         fonts.googleapis.com/fonts.gstatic.com were never allowlisted —
+         see server/csp.ts). preconnect warms the connection before the
+         stylesheet is even requested; display=swap (already in the URL)
+         means text renders in the fallback font immediately and swaps in
+         Bebas Neue once it loads, instead of an invisible-text wait. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" />
+
+    <!--seo-fallback-start-->
+    <!-- Fallback tags: used only when a route has no prerendered HTML yet
+         (e.g. local `npm run dev`) or client-side navigation to an unknown
+         path. The prerender script (scripts/prerender.tsx) replaces this
+         whole block with react-helmet-async's real per-route output. -->
+    <title>IT Courses with Placement & EMI | Qualibytes Noida</title>
+    <meta name="description" content="Live IT courses in DevOps, Data Science, Full Stack, Testing & Cyber Security with real projects, internship certificate and job referrals. EMI from ₹2,000/month." />
+    <link rel="canonical" href="https://qualibytes.com/" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Qualibytes IT Academy" />
+    <meta property="og:title" content="IT Courses with Placement & EMI | Qualibytes Noida" />
+    <meta property="og:description" content="Live IT courses with real projects, internship certificate and job referrals. EMI from ₹2,000/month." />
+    <meta property="og:url" content="https://qualibytes.com/" />
+    <meta property="og:image" content="https://qualibytes.com/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!--seo-fallback-end-->
+
+    <meta name="theme-color" content="#1e3a8a" />
+    <meta name="author" content="Qualibytes IT Academy" />
+
+    <!-- Local SEO -->
+    <meta name="geo.region" content="IN-UP" />
+    <meta name="geo.placename" content="Noida" />
+
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM summary" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+    <!-- Google Search Console verification: TODO -->
+    <!-- <meta name="google-site-verification" content="XXXX" /> -->
+
+    <!-- #root starts invisible: prerendered markup (scripts/prerender.tsx)
+         fills it with full content for crawlers/view-source, but a human
+         visitor shouldn't see it until React has actually mounted — the
+         pre-SEO site showed nothing until then either (#root was empty),
+         so this keeps first paint matching that: blank, then the real
+         render appears, with no flash of SSR'd markup being replaced.
+         Inline <style> (not an external stylesheet) so it applies before
+         first paint with zero extra request. main.tsx removes this class
+         right after createRoot().render(). opacity, not display:none, so
+         the DOM/text is still present and selectable the instant JS runs,
+         and so crawlers that do render CSS still have real layout to read. -->
+    <style>
+      #root.prerendered-hidden { opacity: 0; }
+    </style>
+  </head>
+
+  <body>
+    <div id="root" class="prerendered-hidden"></div>
+    <noscript>
+      Qualibytes IT Academy, Noida offers live job-oriented IT courses (DevOps, Data Science, AI/ML, Full Stack,
+      Software Testing, Cyber Security) with real projects, internship certificate and placement support.
+      EMI from ₹2,000/month. Call or visit B-91, Sector 2, Noida.
+    </noscript>
+    <!-- async: a module script without it always defers execution until
+         the WHOLE document has finished parsing (HTML spec), regardless of
+         where the tag sits — with prerendered HTML now making this
+         document much larger than before, that was measurably delaying
+         when main.tsx could even start running on a slow connection.
+         async lets it execute as soon as the script itself has downloaded,
+         in parallel with the rest of the document still streaming in. -->
+    <script type="module" async src="/src/main.tsx"></script>
+  </body>
+</html>
