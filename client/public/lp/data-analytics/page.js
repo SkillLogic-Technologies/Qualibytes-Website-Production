@@ -9,6 +9,7 @@ const CONFIG = {
   brochure: "/lp/data-analytics/assets/Qualibytes_DataAnalytics_GenAI_Course_Brochure.pdf",
   waText: "Hi Qualibytes, I want to know more about the Data Analytics + Gen AI course.",
   // Ad tracking: leave empty to switch off
+  gtmId: "GTM-TKL42GDB",       // "GTM-XXXXXXX" (Google Tag Manager)
   metaPixelId: "",             // = Hub setting meta_dataset
   ga4Id: "",                   // "G-XXXXXXX"
   gadsId: "",                  // "AW-XXXXXXXXX"
@@ -76,8 +77,17 @@ if(CONFIG.ga4Id || CONFIG.gadsId){
   if(CONFIG.ga4Id) gtag("config", CONFIG.ga4Id);
   if(CONFIG.gadsId) gtag("config", CONFIG.gadsId, {allow_enhanced_conversions: true});
 }
+if(CONFIG.gtmId){
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({"gtm.start": Date.now(), event: "gtm.js"});
+  loadScript("https://www.googletagmanager.com/gtm.js?id=" + CONFIG.gtmId);
+}
 const fb = (...a) => { try{ window.fbq && fbq(...a); }catch(e){} };
-const gt = (...a) => { try{ window.gtag && gtag(...a); }catch(e){} };
+// Also send events (generate_lead, contact, popup_view) to Tag Manager as dataLayer events
+const gt = (...a) => {
+  try{ window.gtag && gtag(...a); }catch(e){}
+  if(CONFIG.gtmId && a[0] === "event" && a[1] !== "conversion") (window.dataLayer = window.dataLayer || []).push(Object.assign({event: a[1]}, a[2] || {}));
+};
 function adsConv(label, extra){ if(CONFIG.gadsId && label) gt("event", "conversion", Object.assign({send_to: CONFIG.gadsId + "/" + label}, extra||{})); }
 
 // ---------- Call / WhatsApp / email links ----------
