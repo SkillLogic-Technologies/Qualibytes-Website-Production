@@ -77,11 +77,7 @@ if(CONFIG.ga4Id || CONFIG.gadsId){
   if(CONFIG.ga4Id) gtag("config", CONFIG.ga4Id);
   if(CONFIG.gadsId) gtag("config", CONFIG.gadsId, {allow_enhanced_conversions: true});
 }
-if(CONFIG.gtmId){
-  window.dataLayer = window.dataLayer || [];
-  dataLayer.push({"gtm.start": Date.now(), event: "gtm.js"});
-  loadScript("https://www.googletagmanager.com/gtm.js?id=" + CONFIG.gtmId);
-}
+// Tag Manager itself loads from the snippet in index.html <head>
 const fb = (...a) => { try{ window.fbq && fbq(...a); }catch(e){} };
 // Also send events (generate_lead, contact, popup_view) to Tag Manager as dataLayer events
 const gt = (...a) => {
