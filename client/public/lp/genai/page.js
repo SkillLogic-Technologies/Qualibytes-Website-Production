@@ -9,7 +9,7 @@ const CONFIG = {
   brochure: "/lp/genai/assets/Qualibytes_GenAI_Agentic_AI_Engineering_Brochure.pdf",
   waText: "Hi Qualibytes, I want to know more about the Gen AI & Agentic AI Engineering course.",
   // Ad tracking: leave empty to switch off
-  gtmId: "",                   // "GTM-XXXXXXX" (Google Tag Manager)
+  gtmId: "GTM-TKL42GDB",       // "GTM-XXXXXXX" (Google Tag Manager)
   metaPixelId: "",             // = Hub setting meta_dataset
   ga4Id: "",                   // "G-XXXXXXX"
   gadsId: "",                  // "AW-XXXXXXXXX"

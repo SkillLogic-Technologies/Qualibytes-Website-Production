@@ -9,7 +9,7 @@ const CONFIG = {
   brochure: "/lp/devops/assets/Qualibytes_DevOps_AWS_Course_Brochure.pdf",
   waText: "Hi Qualibytes, I want to know more about the DevOps + AWS course.",
   // Ad tracking: leave empty to switch off
-  gtmId: "",                   // "GTM-XXXXXXX" (Google Tag Manager)
+  gtmId: "GTM-TKL42GDB",       // "GTM-XXXXXXX" (Google Tag Manager)
   metaPixelId: "",             // = Hub setting meta_dataset
   ga4Id: "",                   // "G-XXXXXXX"
   gadsId: "",                  // "AW-XXXXXXXXX"
